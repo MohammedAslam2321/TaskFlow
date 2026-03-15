@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-using TaskFlow.Domain.Common;
-using TaskFlow.Domain.Enums;
+﻿using TaskFlow.Domain.Common;
 using TaskStatus = TaskFlow.Domain.Enums.TaskStatus;
 
 namespace TaskFlow.Domain.Entities;
@@ -27,7 +25,7 @@ public class TaskItem : AuditableEntity
     }
 
     public void AssignUser(Guid userId)
-    { 
+    {
         AssignedTo = userId;
     }
 
@@ -37,7 +35,7 @@ public class TaskItem : AuditableEntity
     }
 
     public void AddComment(Comment comment)
-    { 
+    {
         _comments.Add(comment);
     }
 }

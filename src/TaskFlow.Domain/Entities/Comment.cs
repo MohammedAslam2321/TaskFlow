@@ -4,8 +4,8 @@ namespace TaskFlow.Domain.Entities;
 
 public class Comment : AuditableEntity
 {
-    public Guid TaskItemId { get;private set; }
-    public string Content { get; private set; }= string.Empty;
+    public Guid TaskItemId { get; private set; }
+    public string Content { get; private set; } = string.Empty;
 
     private Comment() { }
 
@@ -18,5 +18,4 @@ public class Comment : AuditableEntity
         Content = content;
         CreatedBy = createdBy;
     }
-
 }

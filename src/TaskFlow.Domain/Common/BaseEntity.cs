@@ -1,6 +1,4 @@
-﻿
-
-namespace TaskFlow.Domain.Common;
+﻿namespace TaskFlow.Domain.Common;
 
 public abstract class BaseEntity
 {
